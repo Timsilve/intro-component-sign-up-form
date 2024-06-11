@@ -16,6 +16,7 @@ form.addEventListener("submit", (e) => {
     position[0].style.display = "inline";
     img[0].style.display = "inline";
     firstName.classList.add("error");
+    firstName.placeholder = "";
   } else if (!/^[a-zA-Z]+$/.test(firstName.value)) {
     position[0].textContent = "invalid input";
     position[0].style.display = "inline";
@@ -31,6 +32,7 @@ form.addEventListener("submit", (e) => {
     position[1].style.display = "inline";
     img[1].style.display = "inline";
     lastName.classList.add("error");
+    lastName.placeholder = "";
   } else if (!/^[a-zA-Z]+$/.test(lastName.value)) {
     position[1].textContent = "invalid input";
     position[1].style.display = "inline";
@@ -46,6 +48,8 @@ form.addEventListener("submit", (e) => {
     position[2].style.display = "inline";
     img[2].style.display = "inline";
     email.classList.add("error");
+
+    email.placeholder = "example@gmail.com";
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
     position[2].textContent = "invalid email format";
     position[2].style.display = "inline";
@@ -62,6 +66,7 @@ form.addEventListener("submit", (e) => {
     img[3].style.display = "inline";
     password.classList.add("error");
     slashEye.style.display = "none";
+    password.placeholder = "";
   } else if (password.value.length < 8) {
     position[3].textContent = "password must be up to 8 characters";
     position[3].style.display = "inline";

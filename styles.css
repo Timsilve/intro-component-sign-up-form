@@ -183,10 +183,17 @@ img {
   p {
     font-size: 1.1rem;
   }
+
   h3 {
     line-height: 1.5;
   }
+
+  .position {
+font-size: .6rem;
+  }
+
   small {
     display: inline;
   }
+
 }
